@@ -1,5 +1,63 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
-}
+body {
+    background-color: #2e7d32;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .card {
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    position: relative;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .card.animate {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+  
+  .card .top {
+    font-size: 24px;
+    align-self: flex-start;
+  }
+  
+  .card .middle {
+    font-size: 64px;
+    text-align: center;
+  }
+  
+  .card .bottom {
+    font-size: 24px;
+    align-self: flex-end;
+    transform: rotate(180deg);
+  }
+  
+  .heart, .diamond {
+    color: red;
+  }
+  
+  .spade, .club {
+    color: black;
+  }
+  
+  
+  
+  
+  
+  
+
